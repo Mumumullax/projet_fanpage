@@ -15,14 +15,45 @@
     <button class="burger" id="burger" aria-label="Ouvrir le menu">☰</button>
 
     <nav class="menu" id="menu">
-      <a href="fanpage1.html">Linkin Park</a>
-      <a href="fanpage2.html">Gene Vincent</a>
-      <a href="fanpage3.html">Ozzy Osbourne</a>
+      <div class="groupe">
+        <a href="fanpage1.html" class="chanteur">Chester Bennington</a>
+        <a href="#" class="sous-lien">Actus</a>
+        <a href="#" class="sous-lien">Galerie</a>
+        <a href="#" class="sous-lien">Contact</a>
+      </div>
+
+      <div class="groupe">
+        <a href="fanpage2/fanpage2.html" class="chanteur">Gene Vincent</a>
+        <a href="fanpage2/actus.html" class="sous-lien">Actus</a>
+        <a href="fanpage2/galerie.html" class="sous-lien">Galerie</a>
+        <a href="fanpage2/contact.html" class="sous-lien">Contact</a>
+      </div>
+
+      <div class="groupe">
+        <a href="fanpage3.html" class="chanteur">Ozzy Osbourne</a>
+        <a href="#" class="sous-lien">Actus</a>
+        <a href="#" class="sous-lien">Galerie</a>
+        <a href="#" class="sous-lien">Contact</a>
+      </div>
     </nav>
   </header>
 
   <body>
-    <h2>Choisi ton univers</h2>
+    <div class="son">
+      <span id="son-label">Effets sonores</span>
+      <button
+        class="interrupteur"
+        id="son"
+        role="switch"
+        aria-checked="false"
+        aria-labelledby="son-label"
+      >
+        OFF
+      </button>
+    </div>
+
+    <h2>Choisis ton univers</h2>
+
     <section class="cds">
       <a
         href="fanpage1.html"
@@ -33,7 +64,7 @@
       </a>
 
       <a
-        href="fanpage2.html"
+        href="fanpage2/fanpage2.html"
         class="cd"
         data-audio="contenu/fanpage2/gene_vincent_music_extrait.mp3"
       >

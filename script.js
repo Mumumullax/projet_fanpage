@@ -5,12 +5,33 @@ burger.addEventListener("click", function () {
   menu.classList.toggle("ouvert");
 });
 
+/* boutton pour le son */
+const interrupteur = document.querySelector("#son");
+let sonActif = false;
+const musiques = [];
+
+interrupteur.addEventListener("click", function () {
+  sonActif = !sonActif;
+  interrupteur.setAttribute("aria-checked", sonActif);
+  interrupteur.textContent = sonActif ? "ON" : "OFF";
+
+  if (!sonActif) {
+    musiques.forEach(function (musique) {
+      musique.pause();
+      musique.currentTime = 0;
+    });
+  }
+});
+
+/* cd */
 const cds = document.querySelectorAll(".cd");
 
 cds.forEach(function (cd) {
   const musique = new Audio(cd.dataset.audio);
+  musiques.push(musique);
 
   cd.addEventListener("mouseenter", function () {
+    if (!sonActif) return;
     musique.currentTime = 0;
     musique.play();
   });
@@ -20,5 +41,3 @@ cds.forEach(function (cd) {
     musique.currentTime = 0;
   });
 });
-
-/*test push*/

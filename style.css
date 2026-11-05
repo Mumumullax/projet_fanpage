@@ -1,13 +1,13 @@
 @font-face {
-  font-family: "Rockwill";
-  src: url("contenu/Rockwill.ttf") format("truetype");
+  font-family: "Rock";
+  src: url("contenu/LEMONMILK-Regular.otf") format("truetype");
 }
 
 :root {
   --fond: #0f0f0f;
-  --barre: #231319;
-  --texte: #b394a0;
-  --survol: #e3c4d0;
+  --barre: #d3cbce;
+  --texte: #0f0f0f;
+  --survol: #100c0d;
 }
 
 * {
@@ -19,7 +19,7 @@
 body {
   background-color: var(--fond);
   color: var(--texte);
-  font-family: "Rockwill", sans-serif;
+  font-family: "Rock";
   text-transform: uppercase;
   min-height: 100vh;
 }
@@ -39,13 +39,13 @@ a {
   position: relative;
 }
 
-h1 {
+h6 {
   font-size: 3rem;
   font-weight: normal;
   transition: color 0.3s;
 }
 
-h1:hover {
+h6:hover {
   color: var(--survol);
 }
 
@@ -69,7 +69,11 @@ h1:hover {
   right: 0;
   flex-direction: column;
   background-color: var(--barre);
-  min-width: 220px;
+  min-width: 300px;
+  max-height: calc(100vh - 133px);
+  overflow-y: auto;
+  border-top: 1px solid var(--texte);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.7);
   z-index: 10;
 }
 
@@ -78,11 +82,11 @@ h1:hover {
 }
 
 .menu a {
-  padding: 20px;
-  font-size: 1.5rem;
+  display: block;
   transition:
     background-color 0.3s,
-    color 0.3s;
+    color 0.3s,
+    padding-left 0.3s;
 }
 
 .menu a:hover {
@@ -90,10 +94,58 @@ h1:hover {
   color: var(--barre);
 }
 
-h1 {
+.groupe {
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(179, 148, 160, 0.25);
+}
+
+.groupe:last-child {
+  border-bottom: none;
+}
+
+.chanteur {
+  padding: 10px 24px;
+  font-size: 1.3rem;
+  letter-spacing: 2px;
+  color: var(--survol);
+}
+
+.sous-lien {
+  position: relative;
+  padding: 8px 24px 8px 52px;
+  font-size: 0.95rem;
+  letter-spacing: 1px;
+}
+
+.sous-lien::before {
+  content: "";
+  position: absolute;
+  left: 28px;
+  top: 50%;
+  width: 14px;
+  height: 1px;
+  background-color: currentColor;
+}
+
+.sous-lien:hover {
+  padding-left: 60px;
+}
+
+.sous-lien::before {
+  content: "– ";
+}
+
+.groupe {
+  padding-bottom: 12px;
+}
+
+h2 {
   text-align: center;
   font-size: clamp(2.5rem, 7vw, 6rem);
+  font-family: "Rock";
   margin: 0;
+  padding: 1%;
+  color: #d3cbce;
 }
 
 .cds {
@@ -105,7 +157,7 @@ h1 {
 }
 
 .cd img {
-  width: 280px;
+  width: 400px;
   height: auto;
   display: block;
 }
@@ -131,19 +183,69 @@ h1:focus-visible,
     transform: rotate(360deg);
   }
 }
+.son {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
+  padding: 15px 20px 0;
+  font-size: 0.9rem;
+}
 
-@media (max-width: 700px) {
+.interrupteur {
+  position: relative;
+  width: 56px;
+  height: 24px;
+  border: none;
+  border-radius: 12px;
+  background-color: #1db800;
+  color: white;
+  font-size: 0.7rem;
+  font-weight: bold;
+  text-align: left;
+  padding-left: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.interrupteur::after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  right: 4px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: white;
+  transition: all 0.3s;
+}
+
+.interrupteur[aria-checked="false"] {
+  background-color: #555;
+  text-align: right;
+  padding-left: 0;
+  padding-right: 8px;
+}
+
+.interrupteur[aria-checked="false"]::after {
+  right: auto;
+  left: 4px;
+}
+
+.interrupteur:focus-visible {
+  outline: 3px solid var(--survol);
+  outline-offset: 4px;
+}
+
+@media (max-width: 600px) {
   .entete {
-    height: 90px;
+    height: 80px;
     padding: 0 20px;
   }
 
-  h1 {
-    font-size: 2rem;
-  }
-
+  h6,
   .burger {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 
   .menu {
@@ -151,14 +253,11 @@ h1:focus-visible,
   }
 
   .cds {
-    padding: 40px 20px 50px;
-    gap: 30px;
+    flex-direction: column;
+    align-items: center;
   }
 
   .cd img {
-    width: 200px;
-  }
-
-  .p {
+    width: 220px;
   }
 }
