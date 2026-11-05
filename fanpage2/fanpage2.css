@@ -356,3 +356,95 @@ textarea:focus {
     background-attachment: scroll;
   }
 }
+
+/* burger : caché sur ordi et tablette */
+
+.burger {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  line-height: 1;
+  color: var(--navfont);
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.burger:hover {
+  color: var(--survol);
+}
+
+.burger:focus-visible {
+  outline: 3px solid var(--survol);
+  outline-offset: 4px;
+}
+
+.actu p {
+  overflow-wrap: anywhere;
+}
+
+/* menu burger : mobile uniquement */
+
+@media (max-width: 700px) {
+  .entete {
+    position: relative;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding: 15px 20px;
+    text-align: left;
+  }
+
+  .burger {
+    display: block;
+  }
+
+  .entete nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    background-color: var(--bandeau);
+    border-bottom: 5px double var(--encre);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+    max-height: calc(100vh - 80px);
+    overflow-y: auto;
+  }
+
+  .entete nav.ouvert {
+    display: block;
+  }
+
+  .entete .nav {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    gap: 0;
+    padding: 10px 0;
+  }
+
+  .entete .nav a {
+    display: block;
+    padding: 10px 24px 10px 52px;
+    transition:
+      background-color 0.3s,
+      color 0.3s;
+  }
+
+  .entete .nav li:first-child a {
+    padding-left: 24px;
+    font-size: 1.4rem;
+    letter-spacing: 2px;
+  }
+
+  .entete .nav li:not(:first-child) a::before {
+    content: "– ";
+  }
+
+  .entete .nav a:hover {
+    background-color: var(--encre);
+    color: var(--bandeau);
+  }
+}
