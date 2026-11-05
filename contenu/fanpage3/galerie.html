@@ -3,112 +3,87 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Galerie - Ozzy Osbourne</title>
 
-    <title>Fan Page - Black Sabbath</title>
-
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="fansite3.css" />
+    <script src="script.js" defer></script>
   </head>
 
   <body>
-    <header class="header">
-      <h1>FAN PAGE</h1>
+    <header class="entete">
+      <a href="../index.html" class="acc">Accueil</a>
 
-      <nav class="menu">
-        <a href="#">☰</a>
+      <button
+        class="burger"
+        id="burger"
+        type="button"
+        aria-label="Ouvrir le menu"
+        aria-expanded="false"
+        aria-controls="menu-navigation"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="navigation" id="menu-navigation">
+        <ul class="nav">
+          <li><a href="fanpage3.html">Ozzy Osbourne</a></li>
+          <li><a href="actus.html">Actus</a></li>
+          <li><a href="galerie.html">Galerie</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
       </nav>
     </header>
 
     <main class="container">
-      <section class="hero">
-        <img src="contenu/fanpage3/_(2).jpeg" alt="Black Sabbath" />
-      </section>
-
-      <div class="separateur-etoiles">★ ★ ★ ★ ★ ★ ★ ★ ★</div>
-
       <section class="titre">
-        <h2>BLACK SABBATH</h2>
+        <h2>Galerie photos</h2>
       </section>
 
-      <section class="introduction">
+      <section class="galerie-intro">
         <p>
-          Bienvenue dans l'univers de Black Sabbath, groupe britannique
-          considéré comme l'un des fondateurs du heavy metal.
+          Plongez dans l'univers du Prince of Darkness. Des concerts mythiques
+          aux portraits emblématiques, retrouvez les moments forts d'une légende
+          du rock.
         </p>
       </section>
 
-      <div class="separateur-etoiles">★ ★ ★ ★ ★ ★ ★ ★ ★</div>
+      <section class="galerie">
+        <a href="./image/ozzyoz1.jpeg" target="_blank" class="photo">
+          <img src="./image/ozzyoz1.jpeg" alt="Ozzy Osbourne" />
+          <span>Le Prince of Darkness</span>
+        </a>
 
-      <section class="presentation">
-        <div class="presentation-image">
-          <img src="contenu/fanpage3/ozzyosbourne1.jpeg" alt="Ozzy Osbourne" />
-        </div>
+        <a href="./image/ozzyoz2.jpeg" target="_blank" class="photo">
+          <img src="./image/ozzyoz2.jpeg" alt="Ozzy Osbourne et son groupe" />
+          <span>Le meilleur</span>
+        </a>
 
-        <div class="presentation-texte">
-          <h3>OZZY OSBOURNE</h3>
+        <a href="./image/ozzyoz3.jpeg" target="_blank" class="photo">
+          <img src="./image/ozzyoz3.jpeg" alt="Ozzy Osbourne sur scène" />
+          <span>RIP</span>
+        </a>
 
-          <p>
-            Chanteur emblématique de Black Sabbath, Ozzy Osbourne a marqué
-            l'histoire du rock et du heavy metal par sa voix et son univers
-            musical unique.
-          </p>
-        </div>
+        <a href="./image/ozzyoz4.jpeg" target="_blank" class="photo">
+          <img src="./image/ozzyoz4.jpeg" alt="Ozzy Osbourne" />
+          <span>Une légende du rock</span>
+        </a>
+        <a href="./image/ozzyoz5.jpeg" target="_blank" class="photo">
+          <img src="./image/ozzyoz5.jpeg" alt="Ozzy Osbourne" />
+        </a>
+
+        <a href="./image/ozzyoz6.jpeg" target="_blank" class="photo">
+          <img src="./image/ozzyoz6.jpeg" alt="Ozzy Osbourne" />
+          <span>Grrrrr RIP</span>
+        </a>
       </section>
 
-      <div class="separateur-etoiles">★ ★ ★ ★ ★ ★ ★ ★ ★</div>
-
-      <section class="description">
-        <h2>LEUR HISTOIRE</h2>
-
-        <p>
-          Formé en 1968 à Birmingham, Black Sabbath a révolutionné la musique
-          avec ses riffs lourds, ses sonorités sombres et son univers
-          mystérieux. Le groupe a profondément influencé plusieurs générations
-          de musiciens.
-        </p>
-      </section>
-
-      <div class="separateur-etoiles">★ ★ ★ ★ ★ ★ ★ ★ ★</div>
-
-      <section class="presentation">
-        <div class="presentation-image">
-          <img
-            src="contenu/fanpage3/ozzyosbourne2.jpeg"
-            alt="Ozzy Osbourne sur scène"
-          />
-        </div>
-
-        <div class="presentation-texte">
-          <h3>UNE LEGENDE DU ROCK</h3>
-
-          <p>
-            Entre performances mythiques, albums incontournables et concerts
-            légendaires, Black Sabbath reste une référence majeure de la musique
-            metal.
-          </p>
-        </div>
-      </section>
-
-      <div class="separateur-etoiles">★ ★ ★ ★ ★ ★ ★ ★ ★</div>
-
-      <section class="image-finale">
-        <img src="contenu/fanpage3/_(4).jpeg" alt="Black Sabbath" />
-      </section>
-
-      <section class="description">
-        <h2>LEUR HERITAGE</h2>
-
-        <p>
-          Black Sabbath a ouvert la voie à de nombreux groupes et continue
-          d'inspirer la scène metal internationale.
-        </p>
-      </section>
-
-      <div class="separateur-etoiles">★ ★ ★ ★ ★ ★ ★ ★ ★</div>
+      <div class="separateur-etoiles">★ ★ ★ ★ ★</div>
     </main>
 
     <footer class="footer">
       <p>FAN PAGE BLACK SABBATH</p>
-
       <p>Projet réalisé dans le cadre de notre formation.</p>
     </footer>
   </body>
