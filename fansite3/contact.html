@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Contact - Ozzy Osbourne</title>
+
+    <link rel="stylesheet" href="./fansite3.css" />
+    <script src="./script3.js" defer></script>
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <header class="entete">
+      <a href="../index.html" class="acc">Accueil</a>
+
+      <button
+        class="burger"
+        id="burger"
+        type="button"
+        aria-label="Ouvrir le menu"
+        aria-expanded="false"
+        aria-controls="menu-navigation"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="navigation" id="menu-navigation">
+        <ul class="nav">
+          <li><a href="./fanpage3.html">Ozzy Osbourne</a></li>
+          <li><a href="./actus.html">Actus</a></li>
+          <li><a href="./galerie.html">Galerie</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- CONTENU PRINCIPAL -->
+    <main class="page-contact">
+      <section class="titre">
+        <h1>Contact</h1>
+      </section>
+
+      <section class="contact-intro">
+        <h2>Une question ? Un message ?</h2>
+
+        <p>
+          Une remarque, une suggestion ou simplement l'envie de partager votre
+          passion pour Ozzy Osbourne ? N'hésitez pas à nous écrire.
+        </p>
+      </section>
+
+      <section class="contact-container">
+        <!-- TEXTE DE PRESENTATION -->
+        <div class="contact-texte">
+          <h2>Restons en contact</h2>
+
+          <p>
+            Ce site est un espace dédié à l'univers du Prince of Darkness et à
+            son héritage musical.
+          </p>
+
+          <p>Vos messages et vos retours sont les bienvenus.</p>
+
+          <p class="contact-signature">Let the madness begin...</p>
+        </div>
+
+        <!-- FORMULAIRE -->
+        <form class="form-contact" action="#" method="post">
+          <div class="champ">
+            <label for="nom">Votre nom</label>
+
+            <input
+              type="text"
+              id="nom"
+              name="nom"
+              placeholder="Votre nom"
+              required
+            />
+          </div>
+
+          <div class="champ">
+            <label for="email">Votre adresse e-mail</label>
+
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="exemple@email.com"
+              required
+            />
+          </div>
+
+          <div class="champ">
+            <label for="sujet">Sujet</label>
+
+            <input
+              type="text"
+              id="sujet"
+              name="sujet"
+              placeholder="Objet de votre message"
+              required
+            />
+          </div>
+
+          <div class="champ">
+            <label for="message">Votre message</label>
+
+            <textarea
+              id="message"
+              name="message"
+              rows="7"
+              placeholder="Écrivez votre message ici..."
+              required
+            ></textarea>
+          </div>
+
+          <button type="submit" class="bouton-contact">
+            Envoyer le message
+          </button>
+        </form>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <p>FAN PAGE BLACK SABBATH</p>
+      <p>Projet réalisé dans le cadre de notre formation.</p>
+    </footer>
+  </body>
+</html>

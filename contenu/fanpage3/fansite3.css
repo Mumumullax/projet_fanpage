@@ -43,7 +43,7 @@ body {
   background-color: #000000;
   padding: 25px 40px;
   font-family: "Saltback", Georgia, serif;
-  font-size: 40px;
+  font-size: 50px;
 }
 
 .entete {
@@ -61,11 +61,11 @@ body {
   padding: 30px;
   line-height: 1.8;
   flex-direction: column;
-  gap: 15px;
+  gap: 5px;
 }
 
 .footer p {
-  font-size: 20px;
+  font-size: 25px;
 }
 
 /*nav */
@@ -154,7 +154,7 @@ body {
   width: 100%;
 }
 
-/* img géneral */
+/* img gén */
 
 img {
   display: block;
@@ -192,6 +192,7 @@ img {
 .titre {
   width: 100%;
   text-align: center;
+  font-size: 40px;
 }
 
 .titre h1,
@@ -214,7 +215,7 @@ h2 {
 }
 
 .introduction p {
-  font-size: 18px;
+  font-size: 25px;
   width: 100%;
   padding: 30px;
   background-color: rgba(0, 0, 0, 0.65);
@@ -257,7 +258,7 @@ h2 {
 
 .presentation-texte h3 {
   font-family: "Saltback";
-  font-size: 35px;
+  font-size: 45px;
   color: white;
 }
 
@@ -325,7 +326,7 @@ h2 {
   }
 
   .titre h2 {
-    font-size: 38px;
+    font-size: 40px;
     padding: 20px 10px;
   }
 
@@ -345,6 +346,11 @@ h2 {
   .container {
     width: 85%;
     gap: 50px;
+  }
+
+  .titre h1,
+  h2 {
+    font-size: 80px;
   }
 
   .hero img {
@@ -460,16 +466,16 @@ h2 {
   }
 
   .titre h2 {
-    font-size: 38px;
+    font-size: 50px;
     padding: 20px 10px;
   }
 
   .introduction {
-    padding: 10px;
+    padding: 18px;
   }
 
   .introduction p {
-    font-size: 14px;
+    font-size: 16px;
     padding: 15px;
   }
 
@@ -483,7 +489,7 @@ h2 {
   }
 
   .presentation-texte h3 {
-    font-size: 25px;
+    font-size: 35px;
   }
 
   .description {
@@ -491,8 +497,9 @@ h2 {
     font-size: 14px;
   }
 
-  .description h2 {
-    font-size: 30px;
+  .description h2,
+  h3 {
+    font-size: 35px;
   }
 
   .separateur-etoiles {
@@ -513,7 +520,7 @@ h2 {
   }
 
   .footer p {
-    font-size: 12px;
+    font-size: 18px;
   }
 }
 
