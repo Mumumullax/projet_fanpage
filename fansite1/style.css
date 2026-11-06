@@ -111,6 +111,12 @@ main section {
     border-bottom: 3px solid #b30000;
 
 }
+
+.video {
+    display: block;
+    margin: 30px auto;
+    max-width: 100%;
+}
   
 .albums img {
     width: 180px;
@@ -204,6 +210,13 @@ img {
     }
 
   }    
+
+  .video {
+    display: flex;
+    justify-content: center;
+
+
+  }
 
   .footer {
     background-color: rgba(0, 0, 0, 0.95);
