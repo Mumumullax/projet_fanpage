@@ -1,6 +1,4 @@
-/* ========================================
-   RESET GENERAL
-======================================== */
+/* gé */
 
 * {
   margin: 0;
@@ -24,9 +22,7 @@ body {
   font-size: 18px;
 }
 
-/* ========================================
-   POLICES
-======================================== */
+/* police */
 
 @font-face {
   font-family: "Saltback";
@@ -35,9 +31,7 @@ body {
   font-style: normal;
 }
 
-/* ========================================
-   HEADER ET FOOTER
-======================================== */
+/* header & footer */
 
 .entete,
 .footer {
@@ -73,9 +67,7 @@ body {
   font-size: 20px;
 }
 
-/* ========================================
-   NAVIGATION
-======================================== */
+/* nav */
 
 .navigation {
   margin-left: auto;
@@ -104,9 +96,7 @@ body {
   color: #dca5e8;
 }
 
-/* ========================================
-   MENU BURGER
-======================================== */
+/* menu bg */
 
 .burger {
   display: none;
@@ -125,9 +115,7 @@ body {
   transition: 0.3s;
 }
 
-/* ========================================
-   STRUCTURE GENERALE
-======================================== */
+/* structure */
 
 .container {
   width: 90%;
@@ -144,9 +132,7 @@ body {
   width: 100%;
 }
 
-/* ========================================
-   IMAGES
-======================================== */
+/* img */
 
 img {
   display: block;
@@ -184,9 +170,7 @@ img {
   object-fit: cover;
 }
 
-/* ========================================
-   TITRES
-======================================== */
+/* titre */
 
 .titre {
   width: 100%;
@@ -202,9 +186,7 @@ img {
   padding: 30px;
 }
 
-/* ========================================
-   SEPARATEUR ETOILES
-======================================== */
+/* separateur etoile */
 
 .separateur-etoiles {
   width: 100%;
@@ -217,9 +199,7 @@ img {
   overflow: hidden;
 }
 
-/* ========================================
-   INTRODUCTION
-======================================== */
+/* intro */
 
 .introduction {
   width: 100%;
@@ -238,9 +218,7 @@ img {
   line-height: 1.8;
 }
 
-/* ========================================
-   PRESENTATION
-======================================== */
+/* présentation */
 
 .presentation {
   width: 100%;
@@ -268,9 +246,7 @@ img {
   color: white;
 }
 
-/* ========================================
-   DESCRIPTION
-======================================== */
+/* description */
 
 .description {
   width: 100%;
@@ -290,9 +266,7 @@ img {
   color: white;
 }
 
-/* ========================================
-   GALERIE
-======================================== */
+/* galerie */
 
 .galerie-intro {
   width: 100%;
@@ -470,9 +444,7 @@ img {
   background-color: #49204f;
 }
 
-/* ========================================
-   TABLETTE
-======================================== */
+/* tab */
 
 @media screen and (max-width: 1023px) {
   .galerie {
@@ -486,9 +458,7 @@ img {
   }
 }
 
-/* ========================================
-   DESKTOP
-======================================== */
+/* ecran ordi */
 
 @media screen and (min-width: 1024px) {
   .container {
@@ -506,9 +476,7 @@ img {
   }
 }
 
-/* ========================================
-   MOBILE
-======================================== */
+/* tel */
 
 @media screen and (max-width: 767px) {
   .entete {
@@ -565,7 +533,7 @@ img {
     font-size: 22px;
   }
 
-  /* Animation burger */
+  /* Anim. burger */
 
   .menu-ouvert .burger span:nth-child(1) {
     transform: translateY(8px) rotate(45deg);
@@ -646,9 +614,7 @@ img {
   }
 }
 
-/* ========================================
-   GALERIE MOBILE
-======================================== */
+/* galerie tel */
 
 @media screen and (max-width: 600px) {
   .galerie {
@@ -670,9 +636,7 @@ img {
   }
 }
 
-/* ========================================
-   CONTACT MOBILE
-======================================== */
+/* contact tel */
 
 @media screen and (max-width: 600px) {
   .contact-container {

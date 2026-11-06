@@ -4,13 +4,13 @@ document.addEventListener("DOMContentLoaded", function () {
   const header = document.querySelector(".entete");
   const liens = document.querySelectorAll(".navigation a");
 
-  // Vérification
+  // verif
   if (!burger || !header) {
     console.error("Bouton burger ou header introuvable !");
     return;
   }
 
-  // Ouvrir et fermer le menu
+  // open et close le menu
   burger.addEventListener("click", function () {
     header.classList.toggle("menu-ouvert");
 
@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
     );
   });
 
-  // Fermer le menu après un clic sur un lien
+  // close le menu apres un clic
   liens.forEach(function (lien) {
     lien.addEventListener("click", function () {
       header.classList.remove("menu-ouvert");
@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  // Fermer le menu avec la touche Échap
+  //close le menu avec echap
   document.addEventListener("keydown", function (event) {
     if (event.key === "Escape") {
       header.classList.remove("menu-ouvert");
