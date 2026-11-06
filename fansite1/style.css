@@ -1,0 +1,404 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+  
+}
+
+main section {
+    background-color: rgba(0, 0, 0, 0.75);
+    color: white;
+    padding: 30px;
+    margin: 30px auto;
+    border-radius: 15px;
+    max-width: 1000px;
+    width: 95%;
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    line-height: 1.6;
+    background-image: url("images/background.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    min-height: 100vh;
+}
+header {
+  background-image: linear-gradient(
+        rgba(0, 0, 0, 0.45),
+        rgba(0, 0, 0, 0.45)
+    ), url("images/Chester2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: clamp(250px, 40vw, 500px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    
+}
+.entete {
+    position: relative;
+}
+
+.entete nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+.entete nav ul li:first-child {
+    margin-right: auto;
+}
+
+nav ul {
+  list-style:none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 25px;
+  padding: 15px 25px;
+  
+  
+  
+}
+
+nav {
+  width: 100%;
+  background-color: transparent ;
+  border-bottom: 2px solid #fff;
+}
+
+
+nav ul li a {
+  color: #fff; 
+  font-weight: bold;
+  font-family: fantasy;
+  text-decoration: none;
+  transition: 0.1s;
+}
+
+/* Barre de nav Neon animation survol */
+
+nav ul li a:hover {
+  color: #af9c9c;
+  border-radius: 5px;
+  animation: neon 0.5s infinite alternate;
+}
+
+
+@keyframes neon {
+  from {
+    color:white;
+    text-shadow: 0 0 2px white
+;
+  }
+  to {
+    text-shadow: 0 0 5px red, 0 0 10px red;
+  
+  }
+}  
+
+main section {
+    border-bottom: 3px solid #b30000;
+
+}
+  
+.albums img {
+    width: 180px;
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+
+}
+
+.albums img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 900px) {
+    nav ul {
+        gap: 20px;
+    }
+
+    nav ul li a {
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 600px) {
+    nav {
+        padding: 10px;
+    }
+    nav ul{
+      gap: 10px;
+      padding: 10px;
+    }
+
+    nav ul li a {
+        font-size: 11px;
+    }
+
+    .entete .nav {
+        gap: 6px;
+    }
+
+    .entete .nav a {
+        font-size: 11px;
+        white-space: nowrap;
+    }
+
+
+    header {
+        height: 280px;
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 30px;
+    }
+
+    header p {
+        font-size: 14px;
+    }
+
+    .albums {
+        display: flex;
+        flex-direction: row;
+        flex-wrap:wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        width: auto;
+    }
+
+    .albums img {
+        width: 120px;
+        max-width: 250px;
+        height: auto;
+    }
+
+    main section {
+        width: 95%;
+        padding: 15px;
+        margin: 20px auto;
+    }
+
+  }    
+
+  .footer {
+    background-color: rgba(0, 0, 0, 0.95);
+    border-top: 3px solid #b30000;
+    padding: 25px;
+    margin-top: 40px;
+  }
+
+  .footer nav {
+    background-color: black;
+    border-bottom: none;
+  }
+
+  .footer ul {
+    justify-content: flex-end;
+    flex-wrap: wrap;
+
+  } 
+
+
+/* CONTACT */
+
+.contact {
+    text-align: center;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+.contact input,
+.contact textarea {
+    padding: 12px;
+    border: 1px solid white;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact button {
+    background-color: #b30000;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact button:hover {
+    background-color: #ff3333;
+}
+
+#confirmation {
+    color: lightgreen;
+    font-weight: bold;
+    margin-top: 20px;   
+    
+}
+
+#confirmation[hidden] {
+    display: none;
+}
+
+.burger {
+    display: none;
+}
+
+/* Tab et Phone */
+@media screen and (max-width: 900px) {
+
+    .entete nav {
+        z-index: 10;
+    }
+
+    .burger {
+        display: block;
+        margin: 10px 15px 10px auto;
+        padding: 8px 14px;
+        font-size: 26px;
+        color: white;
+        background-color: #b30000;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .entete nav ul {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        background-color: rgba(0, 0, 0, 0.95);
+        padding: 20px;
+    }
+
+    .entete nav ul.ouvert {
+        display: flex;
+    }
+
+    .entete nav ul li:first-child {
+        margin-right: 0;
+    }
+}
+
+.galerie {
+    text-align: center;
+}
+
+.photos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 25px;
+}
+
+.photos img {
+    width: 220px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.photos img:hover {
+    transform: scale(1.05);
+}
+
+/* Les Actus */
+
+.actualites {
+    text-align: center;
+}
+
+.actus-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.carte-actu {
+    background-color: #181818;
+    border-radius: 10px;
+    overflow: hidden;
+    padding-bottom: 20px;
+}
+
+.carte-actu img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s;
+}
+
+.carte-actu img:hover {
+    transform: scale(1.05);
+}
+
+.carte-actu h2 {
+    color: #ff3333;
+    margin: 15px;
+}
+
+.carte-actu p {
+    color: white;
+    padding: 0 15px;
+}
+
+/* TABLETTE */
+
+@media screen and (max-width: 900px) {
+    .actus-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* SMARTPHONE */
+
+@media screen and (max-width: 600px) {
+    .actus-container {
+        grid-template-columns: 1fr;
+    }
+
+    .carte-actu img {
+        height: 240px;
+    }
+}
+.carte-actu {
+    border: 3px solid red;
+}
+
+
+

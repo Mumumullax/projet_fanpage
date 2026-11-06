@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Fan Pages Acceuil</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <header class="entete">
+    <h6>Fan pages</h6>
+
+    <button class="burger" id="burger" aria-label="Ouvrir le menu">☰</button>
+
+    <nav class="menu" id="menu">
+      <a href="fanpage1.html">Linkin Park</a>
+      <a href="fanpage2.html">Gene Vincent</a>
+      <a href="fanpage3.html">Ozzy Osbourne</a>
+    </nav>
+  </header>
+
+  <body>
+    <h2>Choisi ton univers</h2>
+    <section class="cds">
+      <a
+        href="fanpage1.html"
+        class="cd"
+        data-audio="contenu/fanpage1/linkinpark_music_extrait.mp3"
+      >
+        <img src="contenu/menu/linkinpark.png" alt="CD Linkin Park" />
+      </a>
+
+      <a
+        href="fanpage2.html"
+        class="cd"
+        data-audio="contenu/fanpage2/gene_vincent_music_extrait.mp3"
+      >
+        <img src="contenu/menu/genevincent.png" alt="CD Gene Vincent" />
+      </a>
+
+      <a
+        href="fanpage3.html"
+        class="cd"
+        data-audio="contenu/fanpage3/ozzy_osbourne_music_extrait.mp3"
+      >
+        <img src="contenu/menu/ozzyosbourne.png" alt="CD Ozzy Osbourne" />
+      </a>
+    </section>
+  </body>
+
+  <script src="script.js"></script>
+</html>
