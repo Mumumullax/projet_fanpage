@@ -1,0 +1,700 @@
+/* ========================================
+   RESET GENERAL
+======================================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  background-color: #000;
+  background-image: url("../contenu/fanpage3/image/fondgoth.png");
+  background-size: 100% auto;
+  background-position: center top;
+  background-attachment: scroll;
+  color: white;
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+}
+
+/* ========================================
+   POLICES
+======================================== */
+
+@font-face {
+  font-family: "Saltback";
+  src: url("../contenu/fanpage3/Saltback.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* ========================================
+   HEADER ET FOOTER
+======================================== */
+
+.entete,
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px 40px;
+  background-color: #000;
+  padding: 25px 40px;
+  font-family: "Saltback", Georgia, serif;
+}
+
+.entete {
+  border-bottom: 5px double white;
+  position: relative;
+  z-index: 100;
+}
+
+.footer {
+  justify-content: center;
+  border-top: 5px double white;
+  margin-top: auto;
+  width: 100%;
+  text-align: center;
+  padding: 30px;
+  line-height: 1.8;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.footer p {
+  font-size: 20px;
+}
+
+/* ========================================
+   NAVIGATION
+======================================== */
+
+.navigation {
+  margin-left: auto;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px 40px;
+  list-style: none;
+}
+
+.nav a,
+.acc {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: color 0.3s;
+  font-size: 30px;
+}
+
+.nav a:hover,
+.acc:hover {
+  color: #dca5e8;
+}
+
+/* ========================================
+   MENU BURGER
+======================================== */
+
+.burger {
+  display: none;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+}
+
+.burger span {
+  display: block;
+  width: 28px;
+  height: 3px;
+  background-color: white;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+/* ========================================
+   STRUCTURE GENERALE
+======================================== */
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  padding: 50px 0;
+}
+
+.conteneur {
+  width: 100%;
+}
+
+/* ========================================
+   IMAGES
+======================================== */
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.hero {
+  width: 100%;
+}
+
+.hero img {
+  width: 100%;
+  max-height: 500px;
+  object-fit: cover;
+}
+
+.presentation-image {
+  width: 100%;
+}
+
+.presentation-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.image-finale {
+  width: 100%;
+}
+
+.image-finale img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+}
+
+/* ========================================
+   TITRES
+======================================== */
+
+.titre {
+  width: 100%;
+  text-align: center;
+}
+
+.titre h1,
+.titre h2 {
+  font-family: "Saltback", Georgia, serif;
+  font-size: clamp(40px, 7vw, 70px);
+  color: white;
+  background-color: rgba(0, 0, 0, 0.65);
+  padding: 30px;
+}
+
+/* ========================================
+   SEPARATEUR ETOILES
+======================================== */
+
+.separateur-etoiles {
+  width: 100%;
+  color: white;
+  font-size: 45px;
+  line-height: 1;
+  letter-spacing: 5px;
+  text-align: center;
+  padding: 10px 0;
+  overflow: hidden;
+}
+
+/* ========================================
+   INTRODUCTION
+======================================== */
+
+.introduction {
+  width: 100%;
+  padding: 25px;
+  text-align: center;
+  line-height: 1.8;
+  color: white;
+}
+
+.introduction p {
+  font-size: 20px;
+  width: 100%;
+  padding: 30px;
+  background-color: rgba(0, 0, 0, 0.75);
+  text-align: center;
+  line-height: 1.8;
+}
+
+/* ========================================
+   PRESENTATION
+======================================== */
+
+.presentation {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 25px;
+}
+
+.presentation-texte {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 30px;
+  background-color: rgba(0, 0, 0, 0.75);
+  color: white;
+  line-height: 1.8;
+  text-align: center;
+}
+
+.presentation-texte h3 {
+  font-family: "Saltback", Georgia, serif;
+  font-size: 45px;
+  color: white;
+}
+
+/* ========================================
+   DESCRIPTION
+======================================== */
+
+.description {
+  width: 100%;
+  padding: 30px;
+  background-color: rgba(0, 0, 0, 0.75);
+  text-align: center;
+  line-height: 1.8;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.description h2 {
+  font-family: "Saltback", Georgia, serif;
+  font-size: clamp(30px, 5vw, 50px);
+  color: white;
+}
+
+/* ========================================
+   GALERIE
+======================================== */
+
+.galerie-intro {
+  width: 100%;
+  padding: 25px;
+  background-color: rgba(0, 0, 0, 0.75);
+  color: white;
+  text-align: center;
+  line-height: 1.8;
+}
+
+.galerie {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.photo {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  border: 2px solid black;
+  background-color: #100010;
+  aspect-ratio: 4 / 5;
+  text-decoration: none;
+}
+
+.photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition:
+    transform 0.5s ease,
+    opacity 0.5s ease;
+}
+
+.photo span {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 18px 10px;
+  color: white;
+  text-align: center;
+  font-family: "Saltback", Georgia, serif;
+  font-size: 22px;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.95));
+}
+
+.photo:hover {
+  border-color: white;
+  box-shadow: 0 0 18px rgba(150, 40, 170, 0.6);
+}
+
+.photo:hover img {
+  transform: scale(1.08);
+  opacity: 0.8;
+}
+
+/* ========================================
+   PAGE CONTACT
+======================================== */
+
+.page-contact {
+  width: 100%;
+  padding-bottom: 50px;
+}
+
+.contact-intro {
+  width: 100%;
+  padding: 30px 20px;
+  margin-bottom: 30px;
+  background-color: rgba(0, 0, 0, 0.78);
+  color: white;
+  text-align: center;
+  line-height: 1.8;
+}
+
+.contact-intro h2,
+.contact-texte h2 {
+  font-family: "Saltback", Georgia, serif;
+  font-size: 28px;
+  color: white;
+  margin-bottom: 15px;
+}
+
+.contact-container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  gap: 40px;
+  align-items: start;
+}
+
+.contact-texte {
+  padding: 30px;
+  background-color: rgba(0, 0, 0, 0.78);
+  border-left: 4px solid #dca5e8;
+  color: white;
+  line-height: 1.8;
+}
+
+.contact-texte p {
+  margin-bottom: 20px;
+}
+
+.contact-signature {
+  font-family: "Saltback", Georgia, serif;
+  color: #dca5e8;
+  font-size: 24px;
+  margin-top: 30px;
+}
+
+.form-contact {
+  padding: 30px;
+  background-color: rgba(0, 0, 0, 0.85);
+  border: 1px solid #dca5e8;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.champ {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.champ label {
+  color: white;
+  font-weight: bold;
+}
+
+.champ input,
+.champ textarea {
+  width: 100%;
+  padding: 13px;
+  background-color: #160d19;
+  border: 1px solid #765080;
+  color: white;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  outline: none;
+}
+
+.champ input:focus,
+.champ textarea:focus {
+  border-color: #dca5e8;
+  box-shadow: 0 0 8px rgba(220, 165, 232, 0.4);
+}
+
+.champ textarea {
+  resize: vertical;
+}
+
+.champ input::placeholder,
+.champ textarea::placeholder {
+  color: #aaa;
+}
+
+.bouton-contact {
+  padding: 15px 20px;
+  background-color: #000;
+  border: 1px solid #dca5e8;
+  color: white;
+  font-family: "Saltback", Georgia, serif;
+  font-size: 22px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.bouton-contact:hover {
+  background-color: #49204f;
+}
+
+/* ========================================
+   TABLETTE
+======================================== */
+
+@media screen and (max-width: 1023px) {
+  .galerie {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+  }
+
+  .contact-container {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+}
+
+/* ========================================
+   DESKTOP
+======================================== */
+
+@media screen and (min-width: 1024px) {
+  .container {
+    width: 85%;
+    gap: 50px;
+    max-width: 1200px;
+  }
+
+  .presentation {
+    gap: 40px;
+  }
+
+  .presentation-texte {
+    padding: 45px;
+  }
+}
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media screen and (max-width: 767px) {
+  .entete {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    padding: 15px 20px;
+    gap: 10px;
+  }
+
+  .entete .acc {
+    font-size: 22px;
+    flex-shrink: 0;
+  }
+
+  .burger {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    z-index: 102;
+    flex-shrink: 0;
+  }
+
+  .navigation {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 100%;
+    margin: 0;
+    background-color: #000;
+    z-index: 101;
+  }
+
+  .entete.menu-ouvert .navigation {
+    display: block;
+  }
+
+  .nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 20px;
+    padding: 20px;
+    width: 100%;
+  }
+
+  .nav a {
+    display: block;
+    font-size: 22px;
+  }
+
+  /* Animation burger */
+
+  .menu-ouvert .burger span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .menu-ouvert .burger span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .menu-ouvert .burger span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  /* Contenu */
+
+  .container {
+    width: 92%;
+    gap: 30px;
+    padding: 30px 0;
+  }
+
+  .titre h1,
+  .titre h2 {
+    font-size: 40px;
+    padding: 20px 10px;
+  }
+
+  .introduction {
+    padding: 18px;
+  }
+
+  .introduction p {
+    font-size: 16px;
+    padding: 15px;
+  }
+
+  .presentation {
+    gap: 20px;
+  }
+
+  .presentation-texte {
+    padding: 18px;
+    font-size: 14px;
+  }
+
+  .presentation-texte h3 {
+    font-size: 35px;
+  }
+
+  .description {
+    padding: 18px;
+    font-size: 14px;
+  }
+
+  .description h2 {
+    font-size: 35px;
+  }
+
+  .separateur-etoiles {
+    font-size: 30px;
+    letter-spacing: 3px;
+  }
+
+  .hero img {
+    max-height: 280px;
+  }
+
+  .image-finale img {
+    max-height: 250px;
+  }
+
+  .footer {
+    padding: 20px;
+  }
+
+  .footer p {
+    font-size: 16px;
+  }
+}
+
+/* ========================================
+   GALERIE MOBILE
+======================================== */
+
+@media screen and (max-width: 600px) {
+  .galerie {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .photo {
+    aspect-ratio: 4 / 3;
+  }
+
+  .photo span {
+    font-size: 20px;
+  }
+
+  .galerie-intro {
+    padding: 18px;
+    font-size: 14px;
+  }
+}
+
+/* ========================================
+   CONTACT MOBILE
+======================================== */
+
+@media screen and (max-width: 600px) {
+  .contact-container {
+    width: 92%;
+    gap: 20px;
+  }
+
+  .contact-texte,
+  .form-contact {
+    padding: 20px;
+  }
+
+  .contact-intro {
+    padding: 20px 15px;
+  }
+
+  .contact-intro h2,
+  .contact-texte h2 {
+    font-size: 23px;
+  }
+
+  .bouton-contact {
+    font-size: 19px;
+  }
+}
