@@ -1,4 +1,4 @@
-/* carrousel (page galerie uniquement) */
+/* carrousel */
 const diapos = document.getElementById("diapos");
 const boutonPrec = document.getElementById("prec");
 const boutonSuiv = document.getElementById("suiv");
@@ -24,7 +24,7 @@ if (diapos && boutonPrec && boutonSuiv) {
   });
 }
 
-/* menu burger (mobile) */
+/* menu burger */
 const burger = document.getElementById("burger");
 const menu = document.getElementById("menu");
 
@@ -34,7 +34,7 @@ if (burger && menu) {
     burger.setAttribute("aria-expanded", ouvert);
   });
 
-  // referme le menu si on repasse en affichage tablette / ordi
+  /* referme le menu */
   window.addEventListener("resize", function () {
     if (window.innerWidth > 700) {
       menu.classList.remove("ouvert");
